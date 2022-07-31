@@ -1,16 +1,7 @@
-
-var frange =prompt("Please enter first range");
-var lrange=prompt("Please enter last range")
-
-console.log("All prime number with in that range is:");
-for (i=frange;i<=lrange;i++){
-    var count=0;
-    for (var j=1;j<=i;j++){
-        if(i%j==0){
-            count++;
-        }
-    }
-    if(count==2){
-        console.log(i);
-    }
+var range=prompt("Enter range to find power of two: ");
+var sum=1
+for (var i=1; i<=range; i++){
+    sum=sum*2;
 }
+
+console.log("Power of two table upto the range is: ",sum);
