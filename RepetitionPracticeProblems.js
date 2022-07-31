@@ -1,21 +1,9 @@
-function palindrom(){
-    var num=prompt("Please enter a number to check palindrom or not");
-    var temp=num;
-    var rev=0;
-    var div=0;
-    while(num>0){
-        div=num%10;
-        rev=(rev*10)+div;
-        num=parseInt(num/10);
-    }
-    if(temp==rev){
-        console.log("Entered number is palindrom number ");
-    }
-    else{
-        console.log("Enter number is not a palindrom number ");
-    }
+var range=prompt("Enter range to find Harmonic number: ");
 
+var sum=0;
+
+for (var i=1;i<=range;i++){
+    sum=sum+(1/i);
 }
 
-palindrom();
-
+console.log("Harmonic number upto that range is: ",sum);
