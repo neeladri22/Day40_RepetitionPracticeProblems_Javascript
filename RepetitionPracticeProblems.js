@@ -1,7 +1,21 @@
-var range=prompt("Enter range to find power of two: ");
-var sum=1
-for (var i=1; i<=range; i++){
-    sum=sum*2;
+function palindrom(){
+    var num=prompt("Please enter a number to check palindrom or not");
+    var temp=num;
+    var rev=0;
+    var div=0;
+    while(num>0){
+        div=num%10;
+        rev=(rev*10)+div;
+        num=parseInt(num/10);
+    }
+    if(temp==rev){
+        console.log("Entered number is palindrom number ");
+    }
+    else{
+        console.log("Enter number is not a palindrom number ");
+    }
+
 }
 
-console.log("Power of two table upto the range is: ",sum);
+palindrom();
+
