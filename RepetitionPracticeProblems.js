@@ -1,9 +1,18 @@
-var range=prompt("Enter range to find Harmonic number: ");
-
-var sum=0;
-
-for (var i=1;i<=range;i++){
-    sum=sum+(1/i);
+function Tofahrenheit (){
+    var degC = prompt("Please enter Temperature in Celcius");
+    let degF = (degC * 9/5) +32;
+    console.log(degF);
+    
 }
 
-console.log("Harmonic number upto that range is: ",sum);
+Tofahrenheit()
+
+
+function ToCelcius (){
+    var degF = prompt("Please enter Temperature in Fahrenheit");
+    let degC = (degF - 32) * 5/9;
+    console.log(degC);
+    
+}
+
+ToCelcius();
